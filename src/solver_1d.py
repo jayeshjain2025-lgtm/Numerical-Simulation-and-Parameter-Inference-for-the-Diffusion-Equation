@@ -1,7 +1,9 @@
 import numpy as np
 
-def solve_diffusion_1d(D, L, T, Nx, Nt):
+def solve_diffusion_1d(D, L = 1.0, T = 0.1, Nx = 100, Nt = 500):
     """
+    D_true = 0.2
+
     Simulates 1D diffusion over a fixed spatial domain and time period.
 
     :param D: diffusion coefficient controlling how fast values spread
