@@ -6,15 +6,15 @@ The goal is not just to simulate diffusion, but to estimate the diffusion coeffi
 
 The project demonstrates:
 
-finite-difference discretization of a PDE
+- finite-difference discretization of a PDE
 
-stability-aware numerical simulation
+- stability-aware numerical simulation
 
-synthetic data generation with noise
+- synthetic data generation with noise
 
-parameter estimation via error minimization
+- parameter estimation via error minimization
 
-analysis of limitations inherent to inverse diffusion problems
+- analysis of limitations inherent to inverse diffusion problems
 
 Mathematical Model
 
@@ -87,29 +87,22 @@ t∈[0,T]
 
 Numerical Method
 
-The equation is discretized using an explicit finite difference scheme:
+91 using an explicit finite difference scheme:
 
-Spatial domain discretized into 
-𝑁
-𝑥
-N
-x
+- Spatial domain discretized into N
+[[[](url)](url)](url)
 	​
 
  grid points
 
-Time discretized into 
-𝑁
-𝑡
-N
-t
+- Time discretized into N
 	​
 
  steps
 
-Central difference for the second spatial derivative
+- Central difference for the second spatial derivative
 
-Forward difference for the time derivative
+- Forward difference for the time derivative
 
 The update rule for interior points is:
 
@@ -299,13 +292,13 @@ Interpretation
 
 The small discrepancy arises due to:
 
-measurement noise
+- measurement noise
 
-numerical discretization error
+- numerical discretization error
 
-smoothing and ill-conditioning inherent to diffusion
+- smoothing and ill-conditioning inherent to diffusion
 
-finite resolution of the parameter search
+- finite resolution of the parameter search
 
 These effects are expected in inverse diffusion problems.
 
@@ -314,15 +307,15 @@ Plots Included (Demo & Evidence)
 
 What to show:
 
-Spatial profiles at selected time steps (e.g. t = 0, 50, 100, 200, 500)
+- Spatial profiles at selected time steps (e.g. t = 0, 50, 100, 200, 500)
 
 Why it matters:
 
-Verifies numerical correctness
+- Verifies numerical correctness
 
-Shows spreading, symmetry, and decay
+- Shows spreading, symmetry, and decay
 
-Demonstrates stable, physical behavior
+- Demonstrates stable, physical behavior
 
 2. Error vs Diffusion Coefficient
 
@@ -334,37 +327,37 @@ D
 
 Why it matters:
 
-This is the core inverse problem result
+- This is the core inverse problem result
 
-Shows identifiability of 
+- Shows identifiability of 
 𝐷
 D
 
-Visualizes the effect of noise and model sensitivity
+- Visualizes the effect of noise and model sensitivity
 
 This plot is the key evidence that parameter estimation works.
 
 Limitations
 
-Explicit finite difference scheme limits time step size due to stability constraints
+- Explicit finite difference scheme limits time step size due to stability constraints
 
-Diffusion smooths information, making the inverse problem ill-conditioned at late times
+- Diffusion smooths information, making the inverse problem ill-conditioned at late times
 
 Estimation accuracy degrades with increased noise
 
-Only 1D diffusion is considered in this implementation
+- Only 1D diffusion is considered in this implementation
 
 These limitations are intrinsic to the problem and motivate further extensions.
 
 Possible Extensions
 
-Extension to 2D diffusion
+- Extension to 2D diffusion
 
-Implicit or semi-implicit time-stepping schemes
+- Implicit or semi-implicit time-stepping schemes
 
-Finer parameter search or uncertainty quantification
+- Finer parameter search or uncertainty quantification
 
-Application to real experimental or benchmark datasets
+- Application to real experimental or benchmark datasets
 
 Repository Structure
 src/
