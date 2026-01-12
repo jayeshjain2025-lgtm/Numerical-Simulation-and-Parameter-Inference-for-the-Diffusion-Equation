@@ -111,13 +111,13 @@ The inverse problem consists of estimating D from noisy observations.
 This is a physics-constrained inverse problem, not a machine learning approach.
 
 **Results**
-Estimated Diffusion Coefficient
+Estimated Diffusion Coefficient(for noise == 0.04)
 
 True diffusion coefficient: 
 D_true = 0.2
 
 Estimated diffusion coefficient: 
-D ≈ 0.209
+D ≈ 0.2348
 
 The estimate closely matches the true value despite added noise.
 
