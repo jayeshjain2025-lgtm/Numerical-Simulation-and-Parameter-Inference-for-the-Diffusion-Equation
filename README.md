@@ -23,8 +23,11 @@ We consider the 1D diffusion equation:
 ∂u(x,t) / ∂t ​ = D ∂2u(x,t) / ∂x2​​
 
 where:
+
 -u(x,t) is the diffusing quantity
+
 -D is the diffusion coefficient (unknown in the inverse problem)
+
 -x ∈ [0,L], t∈[0,T]
 
 **Numerical Method**
@@ -97,11 +100,11 @@ The inverse problem consists of estimating D from noisy observations.
 
 -For each candidate:
 
-	1.the forward solver is run
+1.the forward solver is run
 
-	2.simulated profiles at observed times are extracted
+2.simulated profiles at observed times are extracted
 
-	3.a mean squared error (MSE) is computed against observed data
+3.a mean squared error (MSE) is computed against observed data
 
 -The value of D minimizing the error is selected
 
@@ -185,16 +188,16 @@ These limitations are intrinsic to the problem and motivate further extensions.
 
 - Application to real experimental or benchmark datasets
 
-Repository Structure
-src/
-├── solver_1d.py              # Forward diffusion solver
-├── generate_data.py          # Synthetic data generation
-├── parameter_estimation.py   # Inverse modeling and estimation
-plots/
-data/
-README.md
+**Repository Structure:**
+	src/
+		├── solver_1d.py              # Forward diffusion solver
+		├── generate_data.py          # Synthetic data generation
+		├── parameter_estimation.py   # Inverse modeling and estimation
+	plots/
+	data/
+	README.md
 
-Final Note
+**Final Note**
 
 This project focuses on correctness, numerical stability, and interpretability rather than scale or novelty.
 It is intended as a demonstration of scientific computing and inverse modeling fundamentals.
