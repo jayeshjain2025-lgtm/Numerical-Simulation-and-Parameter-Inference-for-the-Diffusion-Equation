@@ -189,6 +189,7 @@ These limitations are intrinsic to the problem and motivate further extensions.
 - Application to real experimental or benchmark datasets
 
 **Repository Structure:**
+
 	src/
 		├── solver_1d.py              # Forward diffusion solver
 		├── generate_data.py          # Synthetic data generation
@@ -196,6 +197,7 @@ These limitations are intrinsic to the problem and motivate further extensions.
 	plots/
 	data/
 	README.md
+
 
 **Final Note**
 
