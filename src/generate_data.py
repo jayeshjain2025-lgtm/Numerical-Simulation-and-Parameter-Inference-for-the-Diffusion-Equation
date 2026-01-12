@@ -2,7 +2,7 @@ import solver_1d
 import numpy as np
 
 D_true = 0.2
-noise_level = 0.07
+noise_level = 0.04
 time_stamps = [50, 100, 200, 300, 400, 500]
 x, history = solver_1d.solve_diffusion_1d(D_true)
 
